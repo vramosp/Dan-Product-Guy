@@ -2,33 +2,42 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: admin
-webhook_url: 'https://api.stackbit.com/project/5c78cc82cbfc440010f2ce17/webhook/forestry'
+webhook_url: https://api.stackbit.com/project/5c78cc82cbfc440010f2ce17/webhook/forestry
 sections:
-  - type: document
-    label: Global Site Config
-    path: _config.yml
-    templates:
-      - config
-  - type: document
-    label: Home
-    path: index.md
-    templates:
-      - home
-  - type: directory
-    path: ''
-    match: '**/*.md'
-    exclude: '{_posts/**,README.md,LICENSE.md,index.md}'
-    label: Pages
-    create: all
-    templates:
-      - page
-  - type: jekyll-posts
-    label: Posts
-    create: all
-    templates:
-      - post
+- type: document
+  path: _config.yml
+  label: Global Site Config
+  templates:
+  - config
+- type: document
+  path: index.md
+  label: Home
+  templates:
+  - home
+- type: directory
+  path: ''
+  label: Pages
+  create: all
+  match: "**/*.md"
+  exclude: "{_posts/**,README.md,LICENSE.md,index.md}"
+  templates:
+  - page
+- type: jekyll-posts
+  label: Posts
+  create: all
+  templates:
+  - post
 upload_dir: images
-public_path: /images
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ':filename:'
+file_template: ":filename:"
+build:
+  preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site
+  publish_command: bundle exec jekyll build -d _site
+  preview_env:
+  - JEKYLL_ENV=staging
+  publish_env:
+  - JEKYLL_ENV=production
+  preview_output_directory: _site
+  output_directory: _site
