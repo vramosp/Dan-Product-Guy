@@ -26,6 +26,3 @@ fields:
   description: Name of the object model if it was referenced
   hidden: true
   default: page
-pages:
-- generic.md
-- elements.md
