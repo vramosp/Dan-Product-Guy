@@ -1,5 +1,5 @@
 ---
-title: Dan Barak - Product Guy
+title: Product Guy
 baseurl: "/"
 permalink: "/posts/:slug:output_ext"
 header:
