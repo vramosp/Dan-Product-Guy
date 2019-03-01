@@ -14,9 +14,9 @@ sections:
   section_id: intro
   component: content_block.html
   type: contentblock
-  content: Stackbit is the 2nd startup company I’ve co-founded. In between those two
-    I’ve also been the first product manager at face.com that was acquired by Facebook.
-    After more than 4 years at Facebook, I’ve spent 2 years at Lyft.
+  content: Stackbit is the 2nd startup company I’ve co-founded. In between, I was
+    an early employee and lead product management at face.com, that was acquired by
+    Facebook in 2012.
   template: contentblock
 - title: Recent Posts
   section_id: posts
