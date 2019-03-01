@@ -27,6 +27,5 @@ fields:
   hidden: true
   default: page
 pages:
-- ipsum.md
 - generic.md
 - elements.md
