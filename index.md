@@ -10,13 +10,13 @@ sections:
     Ex-Facebook.'
   image: "/images/Dan Portrait New Wework.jpg"
   template: heroblock
-- title: Text
+- title: ''
   section_id: intro
   component: content_block.html
   type: contentblock
   content: Stackbit is the 2nd startup company I’ve co-founded. In between those two
     I’ve also been the first product manager at face.com that was acquired by Facebook.
-    After more than 4 years at Facebook, I’ve spent 2 years at Lyft.Read more
+    After more than 4 years at Facebook, I’ve spent 2 years at Lyft.
   template: contentblock
 - title: Recent Posts
   section_id: posts
