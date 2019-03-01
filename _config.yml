@@ -1,30 +1,31 @@
-title: Stackbit Vanilla Theme
-baseurl: /
-permalink: '/posts/:slug:output_ext'
+---
+title: Dan Barak - Product Guy
+baseurl: "/"
+permalink: "/posts/:slug:output_ext"
 header:
-  content: Stackbit Vanilla
-  has_nav: true
+  content: Product Guy
+  has_nav: false
 footer:
-  content: '&copy; Stackbit-Vanilla. All rights reserved.'
+  content: "&copy; Stackbit-Vanilla. All rights reserved."
   links:
-    - text: Made with Stackbit
-      url: 'https://www.stackbit.com'
-      new_window: true
+  - text: Made with Stackbit
+    url: https://www.stackbit.com
+    new_window: true
 sass:
   indentWidth: 4
   style: nested
   precision: 10
 plugins:
-  - jekyll-menus
+- jekyll-menus
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - build.sh
-  - LICENSE.md
-  - README.md
-  - netlify.toml
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
+- build.sh
+- LICENSE.md
+- README.md
+- netlify.toml
