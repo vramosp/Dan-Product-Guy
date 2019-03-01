@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Dan Barak - Product Guy
 sections:
 - section_id: hero
   component: hero_block.html
