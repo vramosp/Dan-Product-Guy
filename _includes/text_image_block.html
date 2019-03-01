@@ -1,0 +1,7 @@
+<!-- Section -->
+<section id="{{ include.section.section_id }}" class="content">
+    {% if include.section.image %}<img class="inline-image" src="{{ include.section.image | relative_url }}"/>{% endif %}
+    <div>
+        {{ include.section.text | markdownify }}
+    </div>
+</section>

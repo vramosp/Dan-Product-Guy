@@ -1,0 +1,8 @@
+<!-- Section -->
+<section id="{{ include.section.section_id }}" class="hero">
+    {% if include.section.image %}<img src="{{ include.section.image | relative_url }}"/>{% endif %}
+    <div class="copy">
+        <h1>{{ include.section.title }}</h1>
+        {{ include.section.subtitle | markdownify }}
+    </div>
+</section>
