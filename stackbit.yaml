@@ -1,0 +1,115 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+models:
+  post:
+    type: page
+    label: Post
+    folder: _posts
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: subtitle
+        label: Subtitle
+      - type: string
+        name: excerpt
+        label: Excerpt
+      - type: datetime
+        name: date
+        label: Date
+      - type: image
+        name: thumb_img_path
+        label: Thumb Img Path
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: content_img_path
+        label: Content Img Path
+      - type: string
+        name: type
+        label: Type
+  page_1:
+    type: page
+    label: Page 1
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: list
+        name: sections
+        label: Sections
+        items:
+          type: model
+          models:
+            - qXdYOmZuPa
+            - Va4BdhAynJ
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: type
+        label: Type
+      - type: object
+        name: menu
+        label: Menu
+        fields:
+          - type: object
+            name: main
+            label: Main
+            fields:
+              - type: number
+                name: weight
+                label: Weight
+                subtype: int
+  qXdYOmZuPa:
+    type: object
+    label: Object 1
+    fields:
+      - name: title
+        type: string
+      - name: section_id
+        type: string
+      - name: num_posts_displayed
+        type: number
+        label: Num Posts Displayed
+        subtype: int
+      - name: component
+        type: string
+      - name: type
+        type: string
+      - name: template
+        type: string
+      - name: content
+        type: string
+        label: Content
+  Va4BdhAynJ:
+    type: object
+    label: Object 2
+    fields:
+      - type: string
+        name: section_id
+        label: Section Id
+      - type: string
+        name: component
+        label: Component
+      - type: string
+        name: type
+        label: Type
+      - type: string
+        name: title
+        label: Title
+      - type: markdown
+        name: subtitle
+        label: Subtitle
+      - type: image
+        name: image
+        label: Image
+      - type: string
+        name: template
+        label: Template
